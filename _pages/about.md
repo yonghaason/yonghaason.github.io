@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-# subtitle: yongha AT sungshin.ac.kr
+# subtitle: yongha DOT son AT sungshin.ac.kr
 
 profile:
   align: right
