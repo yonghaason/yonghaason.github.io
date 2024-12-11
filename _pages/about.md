@@ -17,7 +17,7 @@ social: false # includes social icons at the bottom of the page
 
 ### Contacts
 
-- 📧: yongha AT sungshin.ac.kr
+- 📧: yongha DOT son AT sungshin.ac.kr
 - 🏢: Room 829, Bldg. Crystal B, Sungshin Women's University
 
 ### About Me
