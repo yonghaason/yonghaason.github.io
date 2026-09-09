@@ -1,0 +1,20 @@
+---
+layout: none
+permalink: /cv/
+title: cv
+nav: true
+nav_order: 3
+nav_link: /assets/pdf/Curriculum_Vitae.pdf # the navbar "cv" item opens this file directly
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={{ page.nav_link | relative_url }}">
+    <link rel="canonical" href="{{ page.nav_link | relative_url }}">
+    <title>CV</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="{{ page.nav_link | relative_url }}">the CV (PDF)</a>&hellip;</p>
+  </body>
+</html>

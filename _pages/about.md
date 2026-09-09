@@ -1,7 +1,6 @@
 ---
 layout: about
 title: home
-title_ko: 홈
 permalink: /
 
 news: true # includes a list of news items
@@ -14,8 +13,8 @@ social: false # includes social icons at the bottom of the page
 
 ### About the Lab
 
-We are a cryptography research group led by [Prof. Yongha Son](/people/) in the
-Department of Convergence Security Engineering at Sungshin Women's University.
+We are a cryptography research group in the Department of Convergence Security Engineering
+at Sungshin Women's University.
 Our research lies at the intersection of **applied cryptography** and **cryptanalysis**, with two main themes:
 
 - **Cryptography for Collaborative Analysis.**
@@ -49,7 +48,7 @@ Our research lies at the intersection of **applied cryptography** and **cryptana
 
 ### 연구실 소개
 
-성신여자대학교 융합보안공학과 [손용하 교수](/people/)가 이끄는 암호학 연구실입니다.
+성신여자대학교 융합보안공학과의 암호학 연구실입니다.
 **응용 암호**와 **암호 분석**의 접점에서, 크게 두 가지 주제를 연구합니다.
 
 - **협력적 데이터 분석을 위한 암호 기술.**

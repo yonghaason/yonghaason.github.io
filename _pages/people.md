@@ -2,7 +2,6 @@
 layout: page
 permalink: /people/
 title: people
-title_ko: 구성원
 nav: true
 nav_order: 1
 ---
@@ -22,7 +21,7 @@ nav_order: 1
       Department of Convergence Security Engineering, Sungshin Women's University<br>
       Room 829, Bldg. Crystal B<br>
       <i class="fa-solid fa-envelope"></i> yongha DOT son AT sungshin.ac.kr<br>
-      <a href="/cv/"><i class="fa-solid fa-file-lines"></i> Curriculum Vitae</a> &middot;
+      <a href="/assets/pdf/Curriculum_Vitae.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae (PDF)</a> &middot;
       <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i> Google Scholar</a>
     </p>
     <p>
@@ -88,7 +87,7 @@ nav_order: 1
       성신여자대학교 융합보안공학과<br>
       수정캠퍼스 B동 829호<br>
       <i class="fa-solid fa-envelope"></i> yongha DOT son AT sungshin.ac.kr<br>
-      <a href="/cv/"><i class="fa-solid fa-file-lines"></i> 이력서 (CV)</a> &middot;
+      <a href="/assets/pdf/Curriculum_Vitae.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> 이력서 (CV, PDF)</a> &middot;
       <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i> Google Scholar</a>
     </p>
     <p>
