@@ -3,8 +3,6 @@ layout: about
 title: home
 title_ko: 홈
 permalink: /
-subtitle: Privacy-Enhancing Technologies Lab, Department of Convergence Security Engineering, Sungshin Women's University
-subtitle_ko: 성신여자대학교 융합보안공학과 프라이버시 강화 기술(PET) 연구실
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts

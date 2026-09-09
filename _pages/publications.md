@@ -3,8 +3,8 @@ layout: page
 permalink: /publications/
 title: publications
 title_ko: 논문
-description: Author order follows the paper (often alphabetical in cryptography venues). "BK Top-tier" marks venues on the BK21 Computer Science top-tier conference list.
-description_ko: 저자 순서는 논문에 실린 순서를 따릅니다 (암호학 분야는 알파벳 순인 경우가 많습니다). "BK Top-tier"는 BK21 컴퓨터과학 분야 우수 국제학술대회 목록에 포함된 학회를 뜻합니다.
+description: Author order follows the paper (often alphabetical in cryptography venues). "BK Conference" marks venues on the BK21 Computer Science conference list.
+description_ko: 저자 순서는 논문에 실린 순서를 따릅니다 (암호학 분야는 알파벳 순인 경우가 많습니다). "BK Conference"는 BK21 컴퓨터과학 분야 우수 국제학술대회 목록에 포함된 학회를 뜻합니다.
 nav: true
 nav_order: 2
 ---

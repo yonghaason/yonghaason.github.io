@@ -55,11 +55,21 @@ nav_order: 1
 - **Goeun Lee**
 - **Mingyo Chang**
 
-## Past Members
-
-- Sieun Park
-- Yujeong Sung
-- Minji Kim
+<details class="past-members">
+  <summary>Past Members</summary>
+  {% comment %} Graduate alumni: uncomment when there are any.
+  <h6>Graduate</h6>
+  <ul>
+    <li>Name, M.S. 2028</li>
+  </ul>
+  {% endcomment %}
+  <h6>Undergraduate</h6>
+  <ul>
+    <li>Sieun Park</li>
+    <li>Yujeong Sung</li>
+    <li>Minji Kim</li>
+  </ul>
+</details>
 
 </div>
 
@@ -109,10 +119,20 @@ nav_order: 1
 - **Goeun Lee**
 - **Mingyo Chang**
 
-## 이전 구성원
-
-- Sieun Park
-- Yujeong Sung
-- Minji Kim
+<details class="past-members">
+  <summary>이전 구성원</summary>
+  {% comment %} 대학원 졸업생이 생기면 주석을 풀어 사용하세요.
+  <h6>대학원</h6>
+  <ul>
+    <li>이름, 석사 2028</li>
+  </ul>
+  {% endcomment %}
+  <h6>학부</h6>
+  <ul>
+    <li>Sieun Park</li>
+    <li>Yujeong Sung</li>
+    <li>Minji Kim</li>
+  </ul>
+</details>
 
 </div>
