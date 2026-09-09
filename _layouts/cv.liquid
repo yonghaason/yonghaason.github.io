@@ -5,7 +5,11 @@ layout: default
   <div class="post">
     <header class="post-header">
       <h1 class="post-title">
-        {{ page.title }}
+        {%- if page.title_ko -%}
+          <span class="lang-en">{{ page.title }}</span><span class="lang-ko">{{ page.title_ko }}</span>
+        {%- else -%}
+          {{ page.title }}
+        {%- endif %}
         {% if page.cv_pdf %}
           <a
             href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
@@ -17,12 +21,19 @@ layout: default
         {% endif %}
       </h1>
       {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
+        <p class="post-description">
+          {%- if page.description_ko -%}
+            <span class="lang-en">{{ page.description }}</span><span class="lang-ko">{{ page.description_ko }}</span>
+          {%- else -%}
+            {{ page.description }}
+          {%- endif -%}
+        </p>
       {% endif %}
     </header>
 
     <article>
       <div class="cv">
+        <div class="lang-en">
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
@@ -44,6 +55,32 @@ layout: default
             </div>
           </div>
         {% endfor %}
+        </div>
+        {% if site.data.cv_ko %}
+        <div class="lang-ko">
+        {% for entry in site.data.cv_ko %}
+          <a class="anchor" id="{{ entry.title }}"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+            <div>
+              {% if entry.type == 'list' %}
+                {% include cv/list.liquid %}
+              {% elsif entry.type == 'map' %}
+                {% include cv/map.liquid %}
+              {% elsif entry.type == 'nested_list' %}
+                {% include cv/nested_list.liquid %}
+              {% elsif entry.type == 'time_table' %}
+                {% include cv/time_table.liquid %}
+              {% elsif entry.type == 'list_groups' %}
+                {% include cv/list_groups.liquid %}
+              {% else %}
+                {{ entry.contents }}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+        {% endif %}
       </div>
     </article>
   </div>

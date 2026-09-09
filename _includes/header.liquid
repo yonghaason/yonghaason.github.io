@@ -43,13 +43,17 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% assign about_title_ko = page.title_ko %} {% endif %}
           {% endfor %}
 
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
+              {%- if about_title_ko -%}
+                <span class="lang-en">{{ about_title }}</span><span class="lang-ko">{{ about_title_ko }}</span>
+              {%- else -%}
+                {{- about_title -}}
+              {%- endif %}
               {% if page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
@@ -108,7 +112,11 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
+                    {%- if p.title_ko -%}
+                      <span class="lang-en">{{ p.title }}</span><span class="lang-ko">{{ p.title_ko }}</span>
+                    {%- else -%}
+                      {{- p.title -}}
+                    {%- endif %}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -122,6 +130,14 @@
             <li class="nav-item">
               <button id="search-toggle" title="Search" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          {% endif %}
+          {% if site.enable_lang_toggle %}
+            <!-- Toggle language (EN / KO) -->
+            <li class="nav-item">
+              <button id="lang-toggle" class="lang-toggle" title="한국어 / English">
+                <span class="nav-link"><span class="lang-en">KO</span><span class="lang-ko">EN</span></span>
               </button>
             </li>
           {% endif %}

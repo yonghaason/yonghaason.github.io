@@ -11,7 +11,13 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc">
+      {%- if page.subtitle_ko -%}
+        <span class="lang-en">{{ page.subtitle }}</span><span class="lang-ko">{{ page.subtitle_ko }}</span>
+      {%- else -%}
+        {{ page.subtitle }}
+      {%- endif -%}
+    </p>
   </header>
 
   <article>
@@ -43,7 +49,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit"><span class="lang-en">news</span><span class="lang-ko">소식</span></a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}

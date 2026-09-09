@@ -1370,3 +1370,34 @@ ninja-keys::part(ninja-input-wrapper) {
 .publications ol.bibliography:empty + .pub-empty {
   display: block;
 }
+
+// ---- Language switch (EN / KO) ----
+html[data-lang="ko"] .lang-en {
+  display: none !important;
+}
+html:not([data-lang="ko"]) .lang-ko {
+  display: none !important;
+}
+
+.lang-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  .nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+}
+
+// ---- BK Top-tier badge on publications ----
+.bk-badge {
+  vertical-align: middle;
+  margin-left: 0.3rem;
+  padding: 0.2em 0.5em;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--global-theme-color);
+}

@@ -1,0 +1,17 @@
+<!-- Language (EN / KO) switch: applied before first paint to avoid flashing -->
+<script>
+  (function () {
+    var lang = 'en';
+    try {
+      var q = new URLSearchParams(location.search).get('lang');
+      if (q === 'ko' || q === 'en') {
+        lang = q;
+        localStorage.setItem('lang', q);
+      } else {
+        lang = localStorage.getItem('lang') || 'en';
+      }
+    } catch (e) {}
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+  })();
+</script>

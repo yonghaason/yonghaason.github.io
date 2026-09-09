@@ -13,6 +13,8 @@
 | Publications | `_bibliography/papers.bib` (`category = {international}` / `{domestic}` 로 구분, `selected = {true}` 면 Home에 노출) |
 | CV 페이지 내용 / PDF | `_data/cv.yml` / `assets/pdf/Curriculum_Vitae.pdf` |
 | 사이트 제목, 이름, 이메일 등 | `_config.yml` |
+| 한국어 CV 내용 | `_data/cv_ko.yml` |
+| 영어/한국어 전환 | 영어는 `class="lang-en"`, 한국어는 `class="lang-ko"` 로 감싸면 상단 EN/KO 버튼으로 전환됩니다. 페이지 제목은 front matter 의 `title_ko`, `description_ko` 로 지정 |
 | 사진 | `assets/img/` |
 
 ## 로컬에서 확인하기
