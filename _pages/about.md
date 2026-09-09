@@ -1,39 +1,42 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
-# subtitle: yongha DOT son AT sungshin.ac.kr
+subtitle: Department of Convergence Security Engineering, Sungshin Women's University
 
 profile:
   align: right
   image: yongha.png
   image_circular: true # crops the image to make it circular
+  more_info: >
+    <p><b>Yongha Son</b>, Assistant Professor</p>
+    <p>Room 829, Bldg. Crystal B</p>
+    <p>Sungshin Women's University, Seoul</p>
+    <p>yongha DOT son AT sungshin.ac.kr</p>
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-### Contacts
+### About the Lab
 
-- 📧: yongha DOT son AT sungshin.ac.kr
-- 🏢: Room 829, Bldg. Crystal B, Sungshin Women's University
+We are a cryptography research group led by [Prof. Yongha Son](/people/) in the
+[Department of Convergence Security Engineering](https://www.sungshin.ac.kr/cse) at Sungshin Women's University.
+Our research lies at the intersection of **applied cryptography** and **cryptanalysis**, with two main themes:
 
-### About Me
+- **Cryptography for Collaborative Analysis.**
+  We design cryptographic protocols that let multiple parties jointly analyze their data
+  without revealing it to each other.
+  This includes _homomorphic encryption_, _secure multi-party computation_,
+  and their applications such as _private set intersection (PSI)_, _private record linkage_,
+  and _privacy-preserving machine learning / genomic analysis_.
 
-I am an Assistant Professor in the [Department of Convergence Security Engineering](https://www.sungshin.ac.kr/cse) at Sungshin Women's University. 
-Before joining Sungshin Women's University, I was a research staff member at [Samsung SDS](https://www.samsungsds.com/us/index.html) from 2020 to 2024.
-I received Ph.D degree in Mathematical Sciences at Seoul National University, under the supervision of [Prof. Jung Hee Cheon](https://www.math.snu.ac.kr/~jhcheon/xe2/)
-My research interests includes privacy enhancing technologies (PET) for secure comptuation, especially homomorphic encryption or multi-party computation, and concrete security of lattice-based cryptographic hard problems.
+- **Analysis of Cryptographic Assumptions.**
+  We study the concrete security of the hardness assumptions that modern (post-quantum) cryptography is built on,
+  most notably _lattice problems_ such as LWE with small or sparse secrets.
+  Understanding how hard these problems really are is essential for choosing safe and efficient parameters.
 
-
---------------------------------------------------------------
-
-### Publications
-
-<div class="publications">
-
-{% bibliography %}
-
-</div>
+If you are interested in joining us as a graduate student or an undergraduate intern,
+please see the [People](/people/) page and feel free to reach out by e-mail.

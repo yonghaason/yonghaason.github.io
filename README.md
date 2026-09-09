@@ -1,3 +1,54 @@
+# Crypto Lab @ Sungshin — 사이트 관리 가이드
+
+이 저장소는 [al-folio](https://github.com/alshedivat/al-folio) Jekyll 테마 기반의 연구실 홈페이지입니다.
+아래는 이 사이트를 관리할 때 자주 쓰는 내용만 요약한 것이고, 테마 자체의 원본 README는 그 아래에 그대로 두었습니다.
+
+## 어디를 고치면 되나
+
+| 내용 | 파일 |
+| --- | --- |
+| Home (랩 소개, 뉴스, 대표 논문) | `_pages/about.md` |
+| News 항목 | `_news/YYYY-MM-DD-slug.md` (파일 하나가 뉴스 하나) |
+| People | `_pages/people.md` |
+| Publications | `_bibliography/papers.bib` (`category = {international}` / `{domestic}` 로 구분, `selected = {true}` 면 Home에 노출) |
+| Teaching | `_pages/teaching.md` |
+| CV 페이지 내용 / PDF | `_data/cv.yml` / `assets/pdf/Curriculum_Vitae.pdf` |
+| 사이트 제목, 이름, 이메일 등 | `_config.yml` |
+| 사진 | `assets/img/` |
+
+## 로컬에서 확인하기
+
+**방법 1 — Docker (권장, 별도 설치 최소)**
+
+```bash
+docker compose pull
+docker compose up
+```
+
+브라우저에서 <http://localhost:8080> 을 열면 됩니다. 파일을 수정하면 자동으로 다시 빌드됩니다.
+
+**방법 2 — Ruby 직접 설치** (Ruby 3.x + Bundler 필요, `_config.yml`의 imagemagick 기능을 쓰려면 ImageMagick도 설치)
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+브라우저에서 <http://localhost:4000> 을 열면 됩니다.
+
+## 인터넷에 올리기 (GitHub Pages)
+
+배포는 `.github/workflows/deploy.yml` 이 자동으로 처리합니다.
+
+1. `main` 브랜치에 push (또는 PR merge) 하면 GitHub Actions 의 **Deploy site** 워크플로가 실행되어
+   사이트를 빌드한 뒤 결과물을 `gh-pages` 브랜치에 올립니다.
+2. 처음 한 번만 저장소 설정을 확인하세요.
+   - `Settings → Actions → General → Workflow permissions` 를 **Read and write permissions** 로.
+   - `Settings → Pages → Build and deployment` 에서 Source 는 **Deploy from a branch**, Branch 는 **`gh-pages`** (main 아님).
+3. 몇 분 뒤 <https://yonghaason.github.io> 에 반영됩니다. 진행 상황은 저장소의 **Actions** 탭에서 볼 수 있습니다.
+
+---
+
 # al-folio
 
 <div align="center">

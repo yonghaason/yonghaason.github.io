@@ -1,87 +1,171 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+%% ---------------------------------------------------------------------------
+%% Publications of the lab.
+%%
+%% Custom fields used by this site:
+%%   category = {international} | {domestic}   -> section on the Publications page
+%%   abbr     = {VENUE}                         -> short venue badge
+%%   selected = {true}                          -> shown on the home page
+%%
+%% Author order follows the published paper (alphabetical order is common in
+%% cryptography venues).
+%% ---------------------------------------------------------------------------
 
-@article{OKVS-PSI,
-  title={Revisiting OKVS-based OPRF and PSI: Cryptanalysis and Better Construction},
-  author={Han, Kyoohyung and Kim, Seongkwang and Lee, Byeonghak and Son, Yongha},
-  year={2024},
-  journal={Asiacrypt}
-}
-@article{PFLJ,
-  title={Private Computation on Common Fuzzy Records},
-  author={Han, Kyoohyung and Kim, Seongkwang and Son, Yongha},
-  year={2025},
-  journal={PETs}
-}
+%% ======================= International Conferences =========================
 
-@article{CPSI-HE,
-  title={PSI with computation or Circuit-PSI for Unbalanced Sets from Homomorphic Encryption},
-  author={Son, Yongha and Jeong, Jinhyeok},
-  year={2023},
-  journal={AsiaCCS}
-}
-
-@article{EPC-CPSI,
-  title={Improved Circuit-PSI via Equality Preserving Compression},
-  author={Han, Kyoohyung and Moon, Dukjae and Son, Yongha},
-  year={2022},
-  journal={SAC (Selected Areas in Cryptography)}
+@inproceedings{PSO-CPSI,
+  title     = {Private Set Operations from Circuit-Based PSI},
+  author    = {Kim, Jiseung and Lee, Hyung Tae and Son, Yongha},
+  booktitle = {ACM Symposium on Applied Computing (SAC)},
+  year      = {2026},
+  abbr      = {ACM SAC},
+  category  = {international},
+  selected  = {true}
 }
 
-@article{PrimHybLWE,
-  title={Revisiting the Hybrid Attack on Sparse and Ternary Secret LWE},
-  author={Son, Yongha and Cheon, Jung Hee},
-  year={2019},
-  journal={WAHC@CCS}
+@inproceedings{PFLJ,
+  title     = {Private Computation on Common Fuzzy Records},
+  author    = {Han, Kyoohyung and Kim, Seongkwang and Son, Yongha},
+  booktitle = {Privacy Enhancing Technologies Symposium (PETS)},
+  year      = {2025},
+  abbr      = {PETS},
+  category  = {international},
+  selected  = {true}
 }
 
-@article{spLWE,
-  title={A Practical Post-Quantum Public-key Cryptosystem based on spLWE},
-  author={Cheon, Jung Hee and Han, Kyoohyung and Kim, Jinsu and Lee, Changmin and Son, Yongha},
-  year={2016},
-  journal={ICISC (International Conference on Information Security and Cryptology)}
+@inproceedings{OKVS-PSI,
+  title     = {Revisiting OKVS-based OPRF and PSI: Cryptanalysis and Better Construction},
+  author    = {Han, Kyoohyung and Kim, Seongkwang and Lee, Byeonghak and Son, Yongha},
+  booktitle = {ASIACRYPT},
+  year      = {2024},
+  abbr      = {ASIACRYPT},
+  category  = {international}
+}
+
+@inproceedings{CPSI-HE,
+  title     = {PSI with Computation or Circuit-PSI for Unbalanced Sets from Homomorphic Encryption},
+  author    = {Son, Yongha and Jeong, Jinhyeok},
+  booktitle = {ACM ASIA Conference on Computer and Communications Security (AsiaCCS)},
+  year      = {2023},
+  abbr      = {AsiaCCS},
+  category  = {international}
+}
+
+@inproceedings{EPC-CPSI,
+  title     = {Improved Circuit-PSI via Equality Preserving Compression},
+  author    = {Han, Kyoohyung and Moon, Dukjae and Son, Yongha},
+  booktitle = {Selected Areas in Cryptography (SAC)},
+  year      = {2022},
+  abbr      = {SAC},
+  category  = {international}
+}
+
+@inproceedings{PrimHybLWE,
+  title     = {Revisiting the Hybrid Attack on Sparse and Ternary Secret LWE},
+  author    = {Son, Yongha and Cheon, Jung Hee},
+  booktitle = {Workshop on Encrypted Computing \& Applied Homomorphic Cryptography (WAHC@CCS)},
+  year      = {2019},
+  abbr      = {WAHC},
+  category  = {international}
+}
+
+@inproceedings{spLWE,
+  title     = {A Practical Post-Quantum Public-Key Cryptosystem Based on spLWE},
+  author    = {Cheon, Jung Hee and Han, Kyoohyung and Kim, Jinsu and Lee, Changmin and Son, Yongha},
+  booktitle = {International Conference on Information Security and Cryptology (ICISC)},
+  year      = {2016},
+  abbr      = {ICISC},
+  category  = {international}
+}
+
+%% ========================= International Journals ==========================
+
+@article{PID-PSU,
+  title    = {A Private-Identifier System from Scalable Private Set Union},
+  author   = {Lee, Sangmin and Kim, Jiseung and Son, Yongha},
+  journal  = {IET Information Security},
+  volume   = {2026},
+  year     = {2026},
+  abbr     = {IET Inf. Sec.},
+  category = {international}
+}
+
+@article{MeetLWE-Babai,
+  title    = {A Hybrid of Lattice-reduction and Meet-LWE via Near-Collision on Babai's Plane},
+  author   = {Hhan, Minki and Kim, Jiseung and Lee, Changmin and Son, Yongha},
+  journal  = {Designs, Codes and Cryptography},
+  volume   = {94},
+  year     = {2026},
+  abbr     = {DCC},
+  category = {international}
 }
 
 @article{PFHEParam,
-  title={Practical FHE Parameters Against Lattice Attacks},
-  author={Cheon, Jung Hee and Son, Yongha and Yhee, Donggeon},
-  journal={Journal of Korean Mathematical Society},
-  volume={59},
-  number={1},
-  year={2022}
+  title    = {Practical FHE Parameters Against Lattice Attacks},
+  author   = {Cheon, Jung Hee and Son, Yongha and Yhee, Donggeon},
+  journal  = {Journal of the Korean Mathematical Society},
+  volume   = {59},
+  number   = {1},
+  year     = {2022},
+  abbr     = {JKMS},
+  category = {international}
 }
 
 @article{PET-RNN,
-  title={Privacy-preserving Breast Cancer Recurrence Prediction based on Homomorphic Encryption and Secure Two-Party Computation},
-  author={Son, Yongha and Han, Kyoohyung and Lee, Yong Seok and Yu, Jonghan and Im, Young-Hyuck and Shin, Soo-Yong},
-  journal={Plos One},
-  volume={16},
-  year={2021}
+  title    = {Privacy-preserving Breast Cancer Recurrence Prediction based on Homomorphic Encryption and Secure Two-Party Computation},
+  author   = {Son, Yongha and Han, Kyoohyung and Lee, Yong Seok and Yu, Jonghan and Im, Young-Hyuck and Shin, Soo-Yong},
+  journal  = {PLoS One},
+  volume   = {16},
+  year     = {2021},
+  abbr     = {PLoS One},
+  category = {international}
 }
 
 @article{HE-Imputation,
-  title={Ultra-Fast Homomorphic Encryption Models enable Secure Outsourcing of Genotype Imputation},
-  author={Kim, Miran and Harmanci, Arif and Bossuat, Jean-Philippe and Carpov, Sergiu and Cheon, Jung Hee and Chillotti, Ilaria and Cho, Wonhee and Froelicher, David and Gama, Nicolas and Georgieva, Mariya and Hong, Seungwan and Hubaux, Jean-Pierre and Kim, Duhyeong and Lauter, Kristin and Ma, Yiping and Ohno-Machado, Lucila and Sofia, Heidi and Son, Yongha and Song, Yongsoo and Troncoso-Pastoriza, Juan and Jiang, Xiaoqian},
-  journal={Cell Systems},
-  volume={12},
-  number={11},
-  year={2021}
+  title    = {Ultra-Fast Homomorphic Encryption Models enable Secure Outsourcing of Genotype Imputation},
+  author   = {Kim, Miran and Harmanci, Arif and Bossuat, Jean-Philippe and Carpov, Sergiu and Cheon, Jung Hee and Chillotti, Ilaria and Cho, Wonhee and Froelicher, David and Gama, Nicolas and Georgieva, Mariya and Hong, Seungwan and Hubaux, Jean-Pierre and Kim, Duhyeong and Lauter, Kristin and Ma, Yiping and Ohno-Machado, Lucila and Sofia, Heidi and Son, Yongha and Song, Yongsoo and Troncoso-Pastoriza, Juan and Jiang, Xiaoqian},
+  journal  = {Cell Systems},
+  volume   = {12},
+  number   = {11},
+  year     = {2021},
+  abbr     = {Cell Systems},
+  category = {international}
+}
+
+@article{HE-GWAS,
+  title    = {Privacy-preserving Approximate GWAS Computation based on Homomorphic Encryption},
+  author   = {Kim, Duhyeong and Son, Yongha and Kim, Dongwoo and Kim, Andrey and Hong, Seungwan and Cheon, Jung Hee},
+  journal  = {BMC Medical Genomics},
+  volume   = {13},
+  year     = {2020},
+  abbr     = {BMC Med. Genom.},
+  category = {international}
 }
 
 @article{DualMitMHyb,
-  title={A Hybrid of Dual and Meet-in-the-Middle Attack on Sparse and Ternary Secret LWE},
-  author={Cheon, Jung Hee and Hhan, Minki and Hong, Seungwan and Son, Yongha},
-  journal={IEEE Access},
-  volume={7},
-  year={2019}
+  title    = {A Hybrid of Dual and Meet-in-the-Middle Attack on Sparse and Ternary Secret LWE},
+  author   = {Cheon, Jung Hee and Hhan, Minki and Hong, Seungwan and Son, Yongha},
+  journal  = {IEEE Access},
+  volume   = {7},
+  year     = {2019},
+  abbr     = {IEEE Access},
+  category = {international}
 }
 
 @article{HElibLinTrans,
-  title={Faster Linear Transformations in HElib, Revisited},
-  author={Cheon, Jung Hee and Choe, Hyeongmin and Lee, Donghwan and Son, Yongha},
-  journal={IEEE Access},
-  volume={7},
-  year={2019}
+  title    = {Faster Linear Transformations in HElib, Revisited},
+  author   = {Cheon, Jung Hee and Choe, Hyeongmin and Lee, Donghwan and Son, Yongha},
+  journal  = {IEEE Access},
+  volume   = {7},
+  year     = {2019},
+  abbr     = {IEEE Access},
+  category = {international}
 }
+
+%% ============================ Domestic =====================================
+%% Add domestic (Korean) journal / conference papers here in the same format
+%% as above, but with
+%%   category = {domestic}
+%% (e.g. booktitle = {한국정보보호학회 하계학술대회 (CISC-S)}, abbr = {CISC-S}).
