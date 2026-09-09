@@ -1305,3 +1305,68 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+// -----------------------------------------------------------------------------
+// Lab-site customizations
+// -----------------------------------------------------------------------------
+
+.recruiting-box {
+  margin: 2rem 0 1rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--global-theme-color);
+  border-radius: 0.25rem;
+  background-color: var(--global-code-bg-color);
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.people-grid {
+  .people-photo {
+    max-width: 140px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .people-name {
+    margin-top: 0.6rem;
+    font-weight: 500;
+  }
+  .people-program {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+.pub-tabs {
+  margin-bottom: 1.5rem;
+  border-bottom-color: var(--global-divider-color);
+
+  .nav-link {
+    color: var(--global-text-color-light);
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    background: transparent;
+    &:hover {
+      border-bottom-color: var(--global-divider-color);
+    }
+    &.active {
+      color: var(--global-theme-color);
+      border-bottom-color: var(--global-theme-color);
+      background: transparent;
+    }
+  }
+}
+
+// Show the "empty" note only when the bibliography list has no entries
+.pub-empty {
+  display: none;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+.publications ol.bibliography:empty + .pub-empty {
+  display: block;
+}

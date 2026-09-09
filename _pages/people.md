@@ -2,14 +2,13 @@
 layout: page
 permalink: /people/
 title: people
-description: members of the lab
 nav: true
 nav_order: 1
 ---
 
-## Principal Investigator
+## Advisor
 
-<div class="row">
+<div class="row people-advisor">
   <div class="col-sm-3 mb-3">
     {% include figure.liquid loading="eager" path="assets/img/yongha.png" class="img-fluid rounded z-depth-1" alt="Yongha Son" %}
   </div>
@@ -43,39 +42,19 @@ nav_order: 1
 ## Students
 
 {% comment %}
-  Add students below. Suggested format for each member:
-
-  <div class="row mb-3">
-    <div class="col-sm-3">
-      {% include figure.liquid path="assets/img/people/hong.jpg" class="img-fluid rounded z-depth-1" alt="Gildong Hong" %}
-    </div>
-    <div class="col-sm-9">
-      <h5 class="mt-0">Gildong Hong (홍길동)</h5>
-      M.S. student, 2026.03 – present<br>
-      Interests: private set intersection, homomorphic encryption<br>
-      <i class="fa-solid fa-envelope"></i> hong AT sungshin.ac.kr
-    </div>
-  </div>
+  One card per student. To add a photo, put it in assets/img/people/ and change the src.
+  The `program` line is free text (e.g. "Ph.D. student", "Integrated Ph.D. student", "M.S. student").
 {% endcomment %}
 
-### Graduate Students
+{% assign students = "Taehun Kang|Ph.D. student|placeholder.svg;Hyun Ji Kwag|Ph.D. student|placeholder.svg;Junhyuk Kwon|Integrated Ph.D. student|placeholder.svg" | split: ";" %}
 
-_To be updated._
-
-### Undergraduate Interns
-
-_To be updated._
-
----
-
-## Join Us
-
-We are looking for motivated students who want to work on cryptography and privacy-enhancing technologies.
-
-- **Graduate students (M.S. / Ph.D.)**: a background in mathematics, computer science, or security is welcome.
-  Experience with linear algebra, algorithms, or programming (C++/Python) is a plus but not required.
-- **Undergraduate interns**: Sungshin students interested in learning about cryptography are encouraged to apply
-  for a semester or vacation internship.
-
-If you are interested, please send an e-mail to <b>yongha DOT son AT sungshin.ac.kr</b> with a short introduction
-and (if available) your transcript or CV.
+<div class="row people-grid">
+  {% for s in students %}
+    {% assign f = s | split: "|" %}
+    <div class="col-6 col-sm-4 col-md-3 mb-4 text-center">
+      <img src="{{ f[2] | prepend: '/assets/img/people/' | relative_url }}" alt="{{ f[0] }}" class="img-fluid rounded z-depth-1 people-photo">
+      <div class="people-name">{{ f[0] }}</div>
+      <div class="people-program">{{ f[1] }}</div>
+    </div>
+  {% endfor %}
+</div>

@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Crypto Lab @ Sungshin # the website title (if blank, full name will be used instead)
+title: PET Lab @ SSWU # the website title (if blank, full name will be used instead)
 first_name: Yongha
 middle_name: 
 last_name: Son
 email: yongha.son@sungshin.ac.kr
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Cryptography research group of Prof. Yongha Son at Sungshin Women's University.
+  PET Lab (Privacy-Enhancing Technologies Lab), the cryptography research group of Prof. Yongha Son at Sungshin Women's University.
   Cryptography for collaborative analysis (HE, MPC, PSI) and analysis of cryptographic assumptions (lattices).
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -328,7 +328,9 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
+  sort_by: year
+  order: descending
+  group_by: none
   group_order: descending
 
 # Display different badges withs stats for your publications

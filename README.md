@@ -7,11 +7,10 @@
 
 | 내용 | 파일 |
 | --- | --- |
-| Home (랩 소개, 뉴스, 대표 논문) | `_pages/about.md` |
+| Home (랩 소개, 모집 안내, 뉴스) | `_pages/about.md` |
 | News 항목 | `_news/YYYY-MM-DD-slug.md` (파일 하나가 뉴스 하나) |
 | People | `_pages/people.md` |
 | Publications | `_bibliography/papers.bib` (`category = {international}` / `{domestic}` 로 구분, `selected = {true}` 면 Home에 노출) |
-| Teaching | `_pages/teaching.md` |
 | CV 페이지 내용 / PDF | `_data/cv.yml` / `assets/pdf/Curriculum_Vitae.pdf` |
 | 사이트 제목, 이름, 이메일 등 | `_config.yml` |
 | 사진 | `assets/img/` |
